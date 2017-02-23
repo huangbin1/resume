@@ -11,7 +11,7 @@ module.exports = {
   }),
   postcss: [
     require('autoprefixer')({
-      browsers: ['last 2 versions']
+      browsers: ['iOS >= 7', 'Android >= 4.1']
     })
   ]
 }

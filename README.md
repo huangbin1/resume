@@ -1,6 +1,6 @@
 # resume
 
-> the resume is written for my new job
+> write a resume for looking for my new job
 
 ## Build Setup
 
