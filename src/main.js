@@ -4,23 +4,23 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-import Home from './components/HelloFromVux'
+import Resume from './components/resume'
 
 Vue.use(VueRouter)
 
 const routes = [{
-  path: '/',
-  component: Home
+    path: '/',
+    component: Resume
 }]
 
 const router = new VueRouter({
-  routes
+    routes
 })
 
 FastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app-box')
