@@ -5,15 +5,18 @@
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+    export default {
+        name: 'app'
+    }
 </script>
 
 <style lang="less">
-@import '~vux/src/styles/reset.less';
-
-body {
-  background-color: #fbf9fe;
-}
+    @import '~vux/src/styles/reset.less';
+    html {
+        background: #EEEEEE;
+    }
+    
+    body {
+        background-color: #fbf9fe;
+    }
 </style>

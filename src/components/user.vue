@@ -2,9 +2,22 @@
   <div class="user">
     <div class="photo">
       <img src="../assets/huangbin.png"></img>
+      <div class="photo-info">
+        <div class="photo-name">
+          <h3>黄彬</h3>&nbsp&nbsp女
+        </div>
+        <div class="photo-job">
+          目前职位：web前端工程师
+        </div>
+        <div class="photo-age">
+          工作年限：2年以上
+        </div>
+      </div>
     </div>
     <card :header="{title:'基本资料'}">
-      <p slot="content" class="card-padding">出生年份 手机 户口 等</p>
+      <div slot="content" class="card-padding">
+        <mycell></mycell>
+      </div>
     </card>
     <card :header="{title:'职业意向'}">
       <p slot="content" class="card-padding">前端开发工程师</p>
@@ -30,13 +43,19 @@
 <script>
     import {
         Card,
-        Divider
+        Divider,
+        Group,
+        Cell
     } from 'vux'
+    import MyCell from "components/mycell"
     export default {
         name: 'user',
         components: {
             Card,
-            Divider
+            Divider,
+            Group,
+            Cell,
+            MyCell
         },
         data() {
             return {
@@ -55,9 +74,28 @@
     }
     
     .photo {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .photo img {
+        display: block;
+        padding: 10px 10px 0 20px;
         width: 120px;
         height: 120px;
+    }
+    
+    .photo-name h3 {
+        color: #128811;
+        display: inline;
+    }
+    
+    .photo-info {
+        flex: 1;
+    }
+    
+    .photo-info div {
+        padding: 8px;
     }
     
     .card-padding {
