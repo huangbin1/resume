@@ -1,27 +1,26 @@
-# resume
+# 黄彬的个人简历
 
-> write a resume for looking for my new job
+> 这是本人写的一个简单的简历webapp,基于vue2.0和最新的vux2.x
 
-## Build Setup
+#webapp查看
+具体demo请扫描二维码查看
+![黄彬的个人简历](https://github.com/huangbin1/resume/blob/master/QRcode.png)
+
+也可以点击下面链接进入：
+[黄彬的个人简历](https://huangbin1.github.io/resume/#/)
+
+## 编译
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 启动调试
 npm run dev
 
-# build for production with minification
+# 编译发布
 npm run build
 
-# build for production and view the bundle analyzer report
+# 编译并查看bundle分析报告
 npm run build --report
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
