@@ -16,7 +16,16 @@
     </div>
     <card :header="{title:'基本资料'}">
       <div slot="content" class="card-padding">
-        <mycell></mycell>
+        <div class="info">
+          <div class="info-cat">出生年月</div>
+          <div class="info-detail">1992年02月14日</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">籍贯</div>
+          <div class="info-detail">汉</div>
+        </div>
+        <!--<mycell></mycell>-->
+        <!--<div id="ability_echarts" style="width: 300px;height:300px;"></div>-->
       </div>
     </card>
     <card :header="{title:'职业意向'}">
@@ -47,20 +56,61 @@
         Group,
         Cell
     } from 'vux'
-    import MyCell from "components/mycell"
+    //import {Echarts} from '../assets/lib/echarts.min.js'
+    let echarts = require('../assets/lib/echarts.min.js');
+    //import MyCell from "components/mycell"
     export default {
         name: 'user',
         components: {
             Card,
             Divider,
             Group,
-            Cell,
-            MyCell
+            Cell
         },
         data() {
             return {
                 msg: 'Welcome to Your Vue.js App'
             }
+        },
+        beforeCreate: function(){
+          console.log("beforeCreate ")
+          console.log(echarts.echarts)
+          console.log(document.getElementById('ability_echarts'))
+          //var myChart = echarts.echarts.init(document.getElementById('ability_echarts'));
+          var option = {
+                  title: {
+                      text: '黄彬的前端能力图'
+                  },
+                  tooltip: {},
+                  legend: {
+                      data: ['黄彬']
+                  },
+                  radar: {
+                      // shape: 'circle',
+                      indicator: [
+                        { name: 'vuejs', max: 100},
+                        { name: 'jquery', max: 100},
+                        { name: 'javascript', max: 100},
+                        { name: 'React', max: 100},
+                        { name: '微信小程序', max: 100},
+                        { name: '整体', max: 100}
+                      ],
+                      radius: 100
+                  },
+                  series: [{
+                      name: '预算 vs 开销（Budget vs spending）',
+                      type: 'radar',
+                      // areaStyle: {normal: {}},
+                      data : [
+                          {
+                              value : [80, 100, 95, 40, 50, 90],
+                              name : '黄彬'
+                          }
+                      ]
+                  }]
+              }
+          // 使用刚指定的配置项和数据显示图表。
+         //myChart.setOption(option);
         }
     }
 </script>
@@ -100,5 +150,21 @@
     
     .card-padding {
         padding: 15px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .info-cat {
+        flex: 1;
+        color: #999999;
+        font-size: 16px;
+    }
+    
+    .info-detail {
+        flex: 1;
+        text-align: right;
     }
 </style>
