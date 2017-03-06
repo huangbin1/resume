@@ -14,6 +14,7 @@
         </div>
       </div>
     </div>
+    <div id="mychart" style="width: 300px;height:300px; " ref="mychart"></div>
     <card :header="{title:'基本资料'}">
       <div slot="content" class="card-padding">
         <div class="info">
@@ -25,7 +26,6 @@
           <div class="info-detail">汉</div>
         </div>
         <!--<mycell></mycell>-->
-        <!--<div id="ability_echarts" style="width: 300px;height:300px;"></div>-->
       </div>
     </card>
     <card :header="{title:'职业意向'}">
@@ -72,45 +72,107 @@
                 msg: 'Welcome to Your Vue.js App'
             }
         },
-        beforeCreate: function(){
-          console.log("beforeCreate ")
-          console.log(echarts.echarts)
-          console.log(document.getElementById('ability_echarts'))
-          //var myChart = echarts.echarts.init(document.getElementById('ability_echarts'));
-          var option = {
-                  title: {
-                      text: '黄彬的前端能力图'
-                  },
-                  tooltip: {},
-                  legend: {
-                      data: ['黄彬']
-                  },
-                  radar: {
-                      // shape: 'circle',
-                      indicator: [
-                        { name: 'vuejs', max: 100},
-                        { name: 'jquery', max: 100},
-                        { name: 'javascript', max: 100},
-                        { name: 'React', max: 100},
-                        { name: '微信小程序', max: 100},
-                        { name: '整体', max: 100}
-                      ],
-                      radius: 100
-                  },
-                  series: [{
-                      name: '预算 vs 开销（Budget vs spending）',
-                      type: 'radar',
-                      // areaStyle: {normal: {}},
-                      data : [
-                          {
-                              value : [80, 100, 95, 40, 50, 90],
-                              name : '黄彬'
-                          }
-                      ]
-                  }]
-              }
-          // 使用刚指定的配置项和数据显示图表。
-         //myChart.setOption(option);
+        mounted() {
+            console.log(this.$refs.mychart)
+            var myChart = echarts.echarts.init(this.$refs.mychart);
+            var option = {
+                title: {
+                    text: '黄彬的前端能力图',
+                    left: 'center',
+                    textStyle: {
+                        color: '#e683d1'
+                    }
+                },
+                legend: {
+                    bottom: 5,
+                    data: ['黄彬'],
+                    itemGap: 20,
+                    textStyle: {
+                        color: '#e683d1',
+                        fontSize: 14
+                    },
+                    selectedMode: 'single'
+                },
+                radar: {
+                    indicator: [{
+                        name: 'vuejs',
+                        max: 100
+                    }, {
+                        name: 'jquery',
+                        max: 100
+                    }, {
+                        name: 'javascript',
+                        max: 100
+                    }, {
+                        name: 'React',
+                        max: 100
+                    }, {
+                        name: '微信小程序',
+                        max: 100
+                    }, {
+                        name: '整体',
+                        max: 100
+                    }],
+                    radius: 100,
+                    shape: 'circle',
+                    splitNumber: 5,
+                    name: {
+                        textStyle: {
+                            color: "#ec6b83"
+                        }
+                    },
+                    // splitLine: {
+                    //     lineStyle: {
+                    //         color: [
+                    //             'rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)',
+                    //             'rgba(238, 197, 102, 0.4)', 'rgba(238, 197, 102, 0.6)',
+                    //             'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'
+                    //         ].reverse()
+                    //     }
+                    // },
+                    splitArea: {
+                        show: false
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(238, 197, 102, 0.5)'
+                        }
+                    }
+                },
+                series: [{
+                    name: '黄彬',
+                    type: 'radar',
+                    lineStyle: {
+                        normal: {
+                            width: 1,
+                            opacity: 0.5
+                        }
+                    },
+                    data: [{
+                        value: [80, 100, 95, 40, 50, 90],
+                        name: '黄彬'
+                    }],
+                    symbol: 'none',
+                    itemStyle: {
+                        normal: {
+                            color: '#F9713C'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            opacity: 0.1
+                        }
+                    }
+                }]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        },
+        created: function() {
+            //console.log(this.$el)
+            console.log("created ")
+            console.log(echarts.echarts)
+
         }
     }
 </script>
@@ -151,7 +213,7 @@
     .card-padding {
         padding: 15px;
     }
-
+    
     .info {
         display: flex;
         flex-direction: row;
@@ -166,5 +228,9 @@
     .info-detail {
         flex: 1;
         text-align: right;
+    }
+    
+    #mychart {
+        margin: 0 auto;
     }
 </style>
