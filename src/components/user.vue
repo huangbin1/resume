@@ -78,7 +78,7 @@
             var option = {
                 title: {
                     text: '黄彬的前端能力图',
-                    left: 'center',
+                    left: 'left',
                     textStyle: {
                         color: '#e683d1'
                     }
@@ -86,6 +86,7 @@
                 legend: {
                     bottom: 5,
                     data: ['黄彬'],
+                    left: 'right',
                     itemGap: 20,
                     textStyle: {
                         color: '#e683d1',
@@ -113,7 +114,7 @@
                         name: '整体',
                         max: 100
                     }],
-                    radius: 100,
+                    radius: 90,
                     shape: 'circle',
                     splitNumber: 5,
                     name: {
