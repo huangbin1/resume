@@ -19,7 +19,7 @@
       <div slot="content" class="card-padding">
         <div class="info">
           <div class="info-cat">出生年月</div>
-          <div class="info-detail">1992年02月14日</div>
+          <div class="info-detail">1992年12月26日</div>
         </div>
         <div class="info">
           <div class="info-cat">籍贯</div>
@@ -52,19 +52,52 @@
       <p slot="content" class="card-padding">前端开发工程师</p>
     </card>
     <card :header="{title:'工作经历'}">
-      <p slot="content" class="card-padding">上海华测导航技术股份有限公司</p>
+      <div slot="content" class="card-padding">
+        <div class="info">
+          <div class="info-cat">2015.3-2017.3</div>
+          <div class="info-detail" style="flex:2">上海华测导航技术股份有限公司</div>
+        </div>
+      </div>
     </card>
     <card :header="{title:'教育经历'}">
-      <p slot="content" class="card-padding">杭州电子科技大学</p>
+      <div slot="content" class="card-padding">
+        <div class="info">
+          <div class="info-cat">2011.9-2015.6</div>
+          <div class="info-detail" style="flex:2">杭州电子科技大学</div>
+        </div>
+      </div>
+    </card>
+     <card :header="{title:'专业技能'}">
+      <div slot="content" class="card-padding">
+        <div class="info">
+          <div class="info-cat">英语</div>
+          <div class="info-detail" style="flex:2">CET4、CET6</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">技能</div>
+          <div class="info-detail" style="flex:2">javascript css jquery HTML ajax CGI linux </div>
+        </div>
+      </div>
     </card>
     <card :header="{title:'自我评价'}">
-      <p slot="content" class="card-padding">很美很温柔！</p>
+      <div slot="content" class="card-padding">
+        <div class="info">
+          1 两年PC端和移动端前端开发经验。
+        </div>
+        <div class="info">
+          2 工作有激情，关键时刻能够顶得住，不抛弃不放弃，能够独当一面
+        </div>
+        <div class="info">
+          3 熟练使用visual studio code, sublime, DreamWeaver等代码编写工具 
+        </div>
+        <div class="info">
+          4 有强烈的上进心和求知欲，善于学习和运用新知识，因为真的很喜欢前端这份职业
+        <div class="info">
+      </div>
     </card>
-    <card :header="{title:'附加信息'}">
-      <p slot="content" class="card-padding">喜欢打人</p>
-    </card>
-    <card :header="{title:'擅长技能'}">
-      <p slot="content" class="card-padding">vue</p>
+    <card :header="{title:'   '}">
+      <div slot="content" class="card-padding">
+      </div>
     </card>
   </div>
 </template>
@@ -98,21 +131,22 @@
             var option = {
                 title: {
                     text: '黄彬的前端能力图',
-                    left: 'left',
+                    left: 'center',
                     textStyle: {
                         color: '#e683d1'
                     }
                 },
                 legend: {
-                    bottom: 5,
+                    show: false,
                     data: ['黄彬'],
-                    left: 'right',
-                    itemGap: 20,
-                    textStyle: {
-                        color: '#e683d1',
-                        fontSize: 14
-                    },
-                    selectedMode: 'single'
+                    // bottom: 5,
+                    // left: 'right',
+                    // itemGap: 20,
+                    // textStyle: {
+                    //     color: '#e683d1',
+                    //     fontSize: 14
+                    // },
+                    // selectedMode: 'single'
                 },
                 radar: {
                     indicator: [{
