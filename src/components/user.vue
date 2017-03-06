@@ -22,7 +22,27 @@
         </div>
         <div class="info">
           <div class="info-cat">籍贯</div>
-          <div class="info-detail">汉</div>
+          <div class="info-detail">汉族</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">婚姻状况</div>
+          <div class="info-detail">未婚</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">手机</div>
+          <div class="info-detail">18906702695</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">邮箱</div>
+          <div class="info-detail">18906702695@163.com</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">户口</div>
+          <div class="info-detail">江西省宜春市</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">状态</div>
+          <div class="info-detail">离职,正在找工作</div>
         </div>
         <!--<mycell></mycell>-->
         <!--<div id="ability_echarts" style="width: 300px;height:300px;"></div>-->
