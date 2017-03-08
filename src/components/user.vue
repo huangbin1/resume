@@ -7,10 +7,10 @@
           <h3>黄彬</h3>&nbsp&nbsp女
         </div>
         <div class="photo-job">
-          目前职位：web前端工程师
+          求职意向：前端工程师
         </div>
         <div class="photo-age">
-          工作年限：2年以上
+          工作年限：2年
         </div>
       </div>
     </div>
@@ -19,27 +19,36 @@
       <div slot="content" class="card-padding">
         <div class="info">
           <div class="info-cat">出生年月</div>
-          <div class="info-detail">1992年12月26日</div>
+          <div class="info-detail">1992/12/26</div>
         </div>
         <div class="info">
           <div class="info-cat">籍贯</div>
-          <div class="info-detail">汉族</div>
+          <div class="info-detail">江西省高安市</div>
         </div>
         <div class="info">
-          <div class="info-cat">婚姻状况</div>
-          <div class="info-detail">未婚</div>
+          <div class="info-cat">学历</div>
+          <div class="info-detail">本科11级</div>
         </div>
         <div class="info">
-          <div class="info-cat">手机</div>
+          <div class="info-cat">毕业时间</div>
+          <div class="info-detail">2015/06/30</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">毕业学校</div>
+          <div class="info-detail">杭州电子科技大学</div>
+        </div>
+        
+        <div class="info">
+          <div class="info-cat">专业</div>
+          <div class="info-detail">电子信息工程</div>
+        </div>
+        <div class="info">
+          <div class="info-cat">联系电话</div>
           <div class="info-detail">18906702695</div>
         </div>
         <div class="info">
           <div class="info-cat">邮箱</div>
           <div class="info-detail">18906702695@163.com</div>
-        </div>
-        <div class="info">
-          <div class="info-cat">户口</div>
-          <div class="info-detail">江西省宜春市</div>
         </div>
         <div class="info">
           <div class="info-cat">状态</div>
@@ -75,7 +84,7 @@
         </div>
         <div class="info">
           <div class="info-cat">技能</div>
-          <div class="info-detail" style="flex:2">javascript css jquery HTML ajax CGI linux </div>
+          <div class="info-detail" style="flex:2">HTML JS CSS XML JQUERY XML JqueryMobile JqueryEasyui AJAX  CGI LINUX </div>
         </div>
       </div>
     </card>
