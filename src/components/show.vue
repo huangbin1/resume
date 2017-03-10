@@ -32,7 +32,7 @@
       <swiper-item class="black"> <img src="../assets/i80MobileImage/6.png" class="imgSize"></img></swiper-item>
       
     </swiper>
-
+  </div>
 </template>
 
 <script>

@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div id="mychart" style="width: 300px;height:300px; " ref="mychart"></div>
+    <div id="mychart" style="width: 300px;height:300px;" ref="mychart"></div>
     <card :header="{title:'基本资料'}">
       <div slot="content" class="card-padding">
         <div class="info">
@@ -101,7 +101,9 @@
         </div>
         <div class="info">
           4 有强烈的上进心和求知欲，善于学习和运用新知识，因为真的很喜欢前端这份职业
+        </div>
         <div class="info">
+        </div>
       </div>
     </card>
     <card :header="{title:'   '}">
@@ -236,7 +238,6 @@
             //console.log(this.$el)
             console.log("created ")
             console.log(echarts.echarts)
-
         }
     }
 </script>
