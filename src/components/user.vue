@@ -3,18 +3,12 @@
     <div class="photo">
       <img src="../assets/huangbin.png"></img>
       <div class="photo-info">
-        <div class="photo-name">
-          <h3>黄彬</h3>&nbsp&nbsp女
-        </div>
-        <div class="photo-job">
-          求职意向：前端工程师
-        </div>
-        <div class="photo-age">
-          工作年限：2年
-        </div>
+          <p>黄彬</p>
+          <p>求职意向：前端工程师</p>
+          <p>工作年限：2年</p>
       </div>
     </div>
-    <div id="mychart" style="width: 300px;height:300px;" ref="mychart"></div>
+    <div id="mychart" style="width:18rem;height:18rem;" ref="mychart"></div>
     <card :header="{title:'基本资料'}">
       <div slot="content" class="card-padding">
         <div class="info">
@@ -57,8 +51,13 @@
         <!--<mycell></mycell>-->
       </div>
     </card>
-    <card :header="{title:'职业意向'}">
-      <p slot="content" class="card-padding">前端开发工程师</p>
+    <card :header="{title:'求职意向'}">
+      <div slot="content" class="card-padding">
+        <div class="info">
+        <div class="info-cat">目标职位</div>
+        <div class="info-detail" style="flex:2">前端工程师</div>
+        </div>
+      </div>
     </card>
     <card :header="{title:'工作经历'}">
       <div slot="content" class="card-padding">
@@ -74,38 +73,52 @@
           <div class="info-cat">2011.9-2015.6</div>
           <div class="info-detail" style="flex:2">杭州电子科技大学</div>
         </div>
-      </div>
-    </card>
-     <card :header="{title:'专业技能'}">
-      <div slot="content" class="card-padding">
         <div class="info">
           <div class="info-cat">英语</div>
-          <div class="info-detail" style="flex:2">CET4、CET6</div>
+          <div class="info-detail" style="flex:2">CET-6</div>
         </div>
         <div class="info">
-          <div class="info-cat">技能</div>
-          <div class="info-detail" style="flex:2">HTML JS CSS XML JQUERY XML JqueryMobile JqueryEasyui AJAX  CGI LINUX </div>
+          <div class="info-cat">计算机</div>
+          <div class="info-detail" style="flex:2">计算机二级C</div>
         </div>
       </div>
     </card>
     <card :header="{title:'自我评价'}">
       <div slot="content" class="card-padding">
         <div class="info">
-          1 两年PC端和移动端前端开发经验。
+          1活泼好动，积极主动
         </div>
         <div class="info">
-          2 工作有激情，关键时刻能够顶得住，不抛弃不放弃，能够独当一面
-        </div>
-        <div class="info">
-          3 熟练使用visual studio code, sublime, DreamWeaver等代码编写工具 
-        </div>
-        <div class="info">
-          4 有强烈的上进心和求知欲，善于学习和运用新知识，因为真的很喜欢前端这份职业
-        </div>
-        <div class="info">
+          2有强烈的上进心和求知欲，善于学习和运用新知识，很喜欢前端
         </div>
       </div>
     </card>
+     <card :header="{title:'专业技能'}">
+      <div slot="content" class="card-padding">
+         <div class="info">
+         1、语言：HTML5,CSS3,JS,XML,JSON,AJAX 
+         </div>
+        <div class="info">
+         2、前端框架：JQUERY MOBILE,VUE,JQUERY EASYUI,BOOTSTRAP 
+        </div>
+        <div class="info">
+         3、编辑器：Adobe Dreamweaver,Visual Studio Code,Sublime 
+        </div>
+        <div class="info">
+         4、操作系统：Windows,linux
+        </div>
+        <div class="info">
+         5、浏览器：Google Chrome， IE，Firefox 
+        </div>
+        <div class="info">
+         6、Github 网址: https://github.com/huangbin1/
+        </div>
+        <div class="info">
+         7、两年PC端和移动端前端开发经验。
+        </div>
+      </div>
+    </card>
+    
     <card :header="{title:'   '}">
       <div slot="content" class="card-padding">
       </div>
@@ -141,7 +154,8 @@
             var myChart = echarts.echarts.init(this.$refs.mychart);
             var option = {
                 title: {
-                    text: '黄彬的前端能力图',
+                    show: false,
+                    text: '我的技能',
                     left: 'center',
                     textStyle: {
                         color: '#e683d1'
@@ -244,6 +258,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  
     .user {
         width: 100%;
         bottom: 55px;
@@ -269,11 +284,32 @@
     
     .photo-info {
         flex: 1;
+        font-size:0.9rem;
+        color:#000000;
+        border-radius:20px;
+        padding: 15px;
+        margin: 1rem;
+        background-color: #FFCCEB;
+        animation:myfirst 5s infinite;
+        -moz-animation:myfirst 5s infinite; /* Firefox */
+        -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+        -o-animation:myfirst 5s infinite; /* Opera */
+        
     }
+   @-webkit-keyframes myfirst
+    {
+    0%   {background:#FFFFCC;}
+    25%  {background:#D1FAFA;}
+    50%  {background: #E8D2E4;;}
+    75%  {background: #E7A0AE;}
+    100% {background:#F3CFFC;}
+    }
+     .photo-info p:first-child{
+         font-size: 1rem;
+         text-align: center;
+     }
     
-    .photo-info div {
-        padding: 8px;
-    }
+   
     
     .card-padding {
         padding: 15px;
@@ -282,20 +318,31 @@
     .info {
         display: flex;
         flex-direction: row;
+        font-size:0.8rem;
+        color:#000000;
+        white-space: nowrap;
     }
     
     .info-cat {
         flex: 1;
-        color: #999999;
-        font-size: 16px;
+        font-size: 0.8rem;
+        color: #000000;
     }
-    
+   
     .info-detail {
         flex: 1;
         text-align: right;
+        font-size: 0.8rem;
+        color: #999999;
     }
     
     #mychart {
         margin: 0 auto;
     }
+    .weui-panel__hd {
+    padding: 14px 15px 10px;
+    color:red;
+    font-size: 13px;
+    position: relative;
+}
 </style>

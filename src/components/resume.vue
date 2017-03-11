@@ -6,7 +6,7 @@
     <div id='user' v-show="choose_user">
       <user></user>
     </div>
-    <div id='project' v-show="choose_project">
+    <div style="height:100%" id='project' v-show="choose_project">
       <project></project>
     </div>
     <div id='project' v-show="choose_github">

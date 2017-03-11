@@ -2,18 +2,18 @@
   <div class="project">
     <timeline class="timeline">
         <timeline-item>
-            <h4>mc100压石项目网页(mobile)</h4>
+            <h4>MC100定位定向仪器（mobile）</h4>
             <p>2015/03–2015/07</p>
-            <p><strong>项目概要:</strong>该项目是实习期间做的一个项目，是mc100接收机配置的网页</p>
-            <p><strong>项目职责:</strong>HTML+CSS+JS的编写;页面UI的修改</p>
+            <p><strong>项目概要:</strong>MC100定位定向仪器由一个主机、两个GPS天线和以嵌入式主板为核心组成，采用先进的一机双天线、载波相位差分技术，实时计算出两个天线的位置和方位角。</p>
+            <p><strong>项目职责:</strong>HTML+CSS+JS+UI DESIGN</p>
             <p><strong>项目业绩:</strong>参照该项目的PC端网页,从零开始完成移动web;熟悉了HTML，CSS，Javascript;熟悉了jquery mobile，jquery等框架</p>
         </timeline-item>
         <timeline-item>
-            <h4>驾考定位视频监控系统网页(pc)</h4>
+            <h4>卫星定位车辆监控系统（pc）</h4>
             <p>2015/03–2015/07</p>
-            <p><strong>项目概要:</strong>驾考定位视频监控系统有音视频录制，播放功能;驾考定位系统包含卫星状态，车辆信息，坐标转换，音视频设置，3G设置，wifi设置 等子网页;该项目后端采用嵌入式web框架：goahead</p>
-            <p><strong>项目职责:</strong>HTML+CSS+JS的编写;页面UI的修改</p>
-            <p><strong>项目业绩:</strong>驾校系统项目网页中加入音视频播放功能，熟练掌握HTML5;熟练掌握Javascript，DOM和JSON对象，理解Ajax原理</p>
+            <p><strong>项目概要:</strong>卫星定位车辆监控系统是利用数据采集、移动通信与互联网技术，把车辆的位置、状态等数据反馈给车辆管理人员软件；包含卫星状态，车辆信息，坐标转换，音视频设置，3G设置，wifi设置 等子网页；该项目后端采用嵌入式web框架：goahead</p>
+            <p><strong>项目职责:</strong>HTML+CSS+JS+UI DESIGN</p>
+            <p><strong>项目业绩:</strong>掌握HTML5，JS，DOM，JSON，Ajax</p>
         </timeline-item>
         <timeline-item>
             <h4>N72 CORS北斗参考站接收机网页(pc,mobile)</h4>
@@ -24,16 +24,16 @@
             <p><strong>项目业绩:</strong>熟悉jquery easyui框架 ，能熟练调用框架中组件;对UI设计有了初步认识，能独立完成小页面的UI设计</p>
         </timeline-item>
         <timeline-item>
-            <h4>i80北斗RTK测量仪器的自动化检测系统网页(pc,mobile)</h4>
+            <h4>i80北斗RTK测量系统(pc,mobile)</h4>
             <p>2015/10--2017/03</p>
             <p><strong>项目概要:</strong>项目是北斗RTK测量仪器的网页，网页旨在配置和获取仪器各模块参数，pc：jquery easyui框架，包含登录界面，主页面，60几个子页面;mobile：jquery mobile框架，包含登录界面，主页面，40几个子页面;后端：fastCGI和lighttpd</p>
             <p><strong>项目职责:</strong>负责将UI设计制作为HTML+CSS页面;根据交互需求，完成相应Javascript编写</p>
             <p><strong>项目业绩:</strong>精通jQuery框架，使用jQuqery,AJAX,XML熟练、准确地进行代码构建，实现所需的交互效果 ;熟悉B/S架构和常见页面布局</p>
         </timeline-item>
         <timeline-item>
-            <h4>中兵集团，千寻位置，接收机定位系统(pc)</h4>
+            <h4>气象仪（pc）</h4>
             <p>2016/01–2017/02</p>
-            <p><strong>项目概要:</strong>该项目是和中国兵器集团，千寻位置公司合作的项目</p>
+            <p><strong>项目概要:</strong>气象仪用来获取风，湿度，温度，压力，降雨量和环境参数。</p>
             <p><strong>项目职责:</strong>负责将UI设计制作为HTML+CSS页面;根据交互需求，完成相应Javascript编写</p>
             <p><strong>项目业绩:</strong>有良好的审美观和用户体验意识;熟悉各浏览器的差异、原理，精通jQuery等JS框架；熟悉针对主流浏览器的代码兼容及优化</p>
         </timeline-item>
@@ -47,15 +47,15 @@
         <timeline-item>
             <h4>高精度板卡网页(pc)</h4>
             <p>2016/04–2016/08 </p>
-            <p><strong>项目概要:</strong>基于板卡的网页，通过网页可以访问板卡数据，配置板卡参数等，该项目是另一部门与本部门的合作项目，网页UI重新设计，开发类项目</p>
-            <p><strong>项目职责:</strong>负责UI设计;负责将UI设计制作为HTML+CSS页面;根据交互需求，完成相应Javascript编写</p>
+            <p><strong>项目概要:</strong>基于高精度高动态定位定向OEM主板，通过网页可以访问板卡数据，配置板卡参数等</p>
+            <p><strong>项目职责:</strong>负责HTML+CSS+JS+UI DESIGN</p>
             <p><strong>项目业绩:</strong>UI框架: 考虑过amazeUI、bootstrap，最终选择bootstrap自定义样式;兼有切图（html、css）、交互（Javascript）技能;前端做好单元测试，尽量保证自己代码问题会是最少的 </p>
         </timeline-item>
         <timeline-item>
             <h4>无人船测深仪项目(pc,mobile)</h4>
             <p>2017/01–2017/02</p>
-            <p><strong>项目概要:</strong>该项目是无人船事业部成立的，网页功能在于配置测深仪参数，呈现测深仪的各类数据</p>
-            <p><strong>项目职责:</strong>负责UI设计;负责将UI设计制作为HTML+CSS页面;根据交互需求，完成相应Javascript编写</p>
+            <p><strong>项目概要:</strong>测声仪用来测量 吃水深度，温度，AD数值等</p>
+            <p><strong>项目职责:</strong>负责HTML+CSS+JS+UI DESIGN</p>
             <p><strong>项目业绩:</strong>能对前端页面自定义样式，修改jquery mobile框架自带样式，在这过程中精通CSS;配合后端人员开发运用Javascript、Ajax实现Web页面和服务器端的异步交互</p>
         </timeline-item>
     </timeline>
@@ -85,12 +85,23 @@
 <style scoped>
    
         p {
-            color: #888;
+            color: #000000;
             font-size: 0.8rem;
         }
         h4 {
-            color: rgb(4, 190, 2);
-            font-weight: normal;
+            color: #ffffff;
+            background-color:#66D3EE;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 0.9rem;
+            width: 300px;
         }
-  
+        strong{
+            color: #66D3EE;
+        }
+        .project{
+        background: linear-gradient(to bottom right, #99EBFF, white);
+        padding-bottom:3.2rem;
+        }
+      
 </style>

@@ -4,10 +4,9 @@
         <timeline-item>
             <h4>云间半导体设备网页</h4>
             <p>2016/8–2016/08</p>
-            <p><strong>项目概要:</strong>该项目是见最近微信小程序比较火，课余时间用微信小应用做了一个二维码应用</p>
-            <p><strong>项目职责:</strong>因为对新鲜的微信小程序特别好奇，有UI设计，js，html的基础，所以独自做了该项目</p>
-            <p><strong>项目业绩:</strong>功能是实现二维码扫描和二维码生成，该项目在github上已经分享</p>
-           
+            <p><strong>项目概要:</strong>该项目是朋友公司的单片机网页</p>
+            <p><strong>项目职责:</strong>优化视觉效果，兼容不同浏览器</p>
+            <p><strong>项目业绩:</strong>美化了网页</p>
         </timeline-item>
         <timeline-item>
             <h4>基于vue框架的音乐播放器(github)</h4>
@@ -27,9 +26,9 @@
         <timeline-item>
             <h4>基于微信小应用的二维码小助手(github)</h4>
             <p>2017/03–2017/03</p>
-            <p><strong>项目概要:</strong>该项目是见最近微信小程序比较火，课余时间用微信小应用做了一个二维码应用</p>
-            <p><strong>项目职责:</strong>因为对新鲜的微信小程序特别好奇，有UI设计，js，html的基础，所以独自做了该项目</p>
-            <p><strong>项目业绩:</strong>功能是实现二维码扫描和二维码生成，该项目在github上已经分享</p>
+            <p><strong>项目概要:</strong>用微信小应用做了一个二维码应用，用于生成二维码和扫描二维码</p>
+            <p><strong>项目职责:</strong>学习微信小应用</p>
+            <p><strong>项目业绩:</strong>该项目在github上已经分享（还未完成）</p>
         </timeline-item>
         
     </timeline>
@@ -59,16 +58,23 @@
 <style scoped>
    
         p {
-            color: #F9B0B0;
+            color: #000000;
             font-size: 0.8rem;
         }
         h4 {
-            color: #F9B0B0;
-            font-weight: normal;
+            color: #ffffff;
+            background-color:#9A8ADC;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 0.9rem;
+            width: 300px;
         }
         strong{
-            color: #F9B0B0;
-            font-size: 0.6rem;
+            color: #9A8ADC;
+        }
+        .project{
+        background: linear-gradient(to bottom right, #E5A3F5, white);
+        padding-bottom:3.2rem;
         }
  
 </style>
