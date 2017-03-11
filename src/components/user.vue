@@ -93,7 +93,7 @@
         </div>
       </div>
     </card>
-     <card :header="{title:'专业技能'}">
+    <card :header="{title:'专业技能'}">
       <div slot="content" class="card-padding">
          <div class="info">
          1语言：HTML5,CSS3,JS,XML,JSON,AJAX 
@@ -117,6 +117,16 @@
          7两年PC端和移动端前端开发经验。
         </div>
       </div>
+    </card>
+    <card :header="{title:'通讯方式'}">
+        <div slot="content" class="card-padding">
+        <a href="www.baidu.com"><img src="../assets/contactImage/zhihu.png"></img></a>
+        <a href="www.baidu.com"><img src="../assets/contactImage/weibo.png"></img></a>
+        <a href="www.baidu.com"><img src="../assets/contactImage/lieping.png"></img></a>
+        <a href="www.baidu.com"><img src="../assets/contactImage/QQ.png"></img></a>
+        <a href="www.baidu.com"><img src="../assets/contactImage/wechart.png"></img></a>
+        <a href="www.baidu.com"><img src="../assets/contactImage/github.png"></img></a>
+        </div>
     </card>
     
     <card :header="{title:'   '}">
