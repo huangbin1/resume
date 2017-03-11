@@ -96,25 +96,25 @@
      <card :header="{title:'专业技能'}">
       <div slot="content" class="card-padding">
          <div class="info">
-         1、语言：HTML5,CSS3,JS,XML,JSON,AJAX 
+         1语言：HTML5,CSS3,JS,XML,JSON,AJAX 
          </div>
         <div class="info">
-         2、前端框架：JQUERY MOBILE,VUE,JQUERY EASYUI,BOOTSTRAP 
+         2前端框架：JQUERY MOBILE,VUE,JQUERY EASYUI,BOOTSTRAP 
         </div>
         <div class="info">
-         3、编辑器：Adobe Dreamweaver,Visual Studio Code,Sublime 
+         3编辑器：Adobe Dreamweaver,Visual Studio Code,Sublime 
         </div>
         <div class="info">
-         4、操作系统：Windows,linux
+         4操作系统：Windows,linux
         </div>
         <div class="info">
-         5、浏览器：Google Chrome， IE，Firefox 
+         5浏览器：Google Chrome， IE，Firefox 
         </div>
         <div class="info">
-         6、Github 网址: https://github.com/huangbin1/
+         6Github 网址: https://github.com/huangbin1/
         </div>
         <div class="info">
-         7、两年PC端和移动端前端开发经验。
+         7两年PC端和移动端前端开发经验。
         </div>
       </div>
     </card>
