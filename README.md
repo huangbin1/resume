@@ -5,6 +5,7 @@
 #webapp查看
 具体demo请扫描二维码查看
 ![黄彬的个人简历](https://github.com/huangbin1/resume/blob/master/QRcode.png)
+
 也可以点击下面链接进入：
 [黄彬的个人简历](https://huangbin1.github.io/resume/#/)
 
