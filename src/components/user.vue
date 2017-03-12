@@ -8,6 +8,16 @@
           <p>工作年限：2年</p>
       </div>
     </div>
+    <div>
+        <div class="contact">
+            <a href="https://www.zhihu.com/people/xiaxiaowen-68"><img src="../assets/contactImage/zhihu.png"></img></a>
+            <a href="http://weibo.com/2624719700/profile?topnav=1&wvr=6"><img src="../assets/contactImage/weibo.png"></img></a>
+            <a href="https://sns.liepin.com/main/5674995339j3099828089"><img src="../assets/contactImage/lieping.png"></img></a>
+            <a href="https://github.com/huangbin1"><img src="../assets/contactImage/QQ.png"></img></a>
+            <a href="https://github.com/huangbin1"><img src="../assets/contactImage/wechart.png"></img></a>
+            <a href="https://github.com/huangbin1"><img src="../assets/contactImage/github.png"></img></a>
+        </div>
+    </div>
     <div id="mychart" style="width:18rem;height:18rem;" ref="mychart"></div>
     <card :header="{title:'基本资料'}">
       <div slot="content" class="card-padding">
@@ -116,21 +126,6 @@
         <div class="info">
          7两年PC端和移动端前端开发经验。
         </div>
-      </div>
-    </card>
-    <card :header="{title:'通讯方式'}">
-        <div slot="content" class="card-padding">
-        <a href="www.baidu.com"><img src="../assets/contactImage/zhihu.png"></img></a>
-        <a href="www.baidu.com"><img src="../assets/contactImage/weibo.png"></img></a>
-        <a href="www.baidu.com"><img src="../assets/contactImage/lieping.png"></img></a>
-        <a href="www.baidu.com"><img src="../assets/contactImage/QQ.png"></img></a>
-        <a href="www.baidu.com"><img src="../assets/contactImage/wechart.png"></img></a>
-        <a href="www.baidu.com"><img src="../assets/contactImage/github.png"></img></a>
-        </div>
-    </card>
-    
-    <card :header="{title:'   '}">
-      <div slot="content" class="card-padding">
       </div>
     </card>
   </div>
@@ -346,6 +341,10 @@
         color: #999999;
     }
     
+    .contact {
+        width : 65%;
+        margin: 0 auto;
+    }
     #mychart {
         margin: 0 auto;
     }
