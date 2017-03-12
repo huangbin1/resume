@@ -266,7 +266,7 @@
   
     .user {
         width: 100%;
-        bottom: 55px;
+        margin-bottom: 55px;
         top: 0px;
     }
     
