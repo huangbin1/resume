@@ -9,8 +9,8 @@
     <divider>mobile page</divider>
     <swiper auto height="600px">
       <swiper-item class="black"> <img src="../assets/i80MobileImage/1.jpg" class="imgSize"></img></swiper-item>
-      <swiper-item class="black"> <img src="../assets/i80MobileImage/2.jpg" class="imgSize"></img></swiper-item>
-      <swiper-item class="black"> <img src="../assets/i80MobileImage/3.jpg" class="imgSize"></img></swiper-item>
+      <swiper-item class="black"> <img src="../assets/i80MobileImage/2.png" class="imgSize"></img></swiper-item>
+      <swiper-item class="black"> <img src="../assets/i80MobileImage/3.png" class="imgSize"></img></swiper-item>
     </swiper>
    
   </div>
