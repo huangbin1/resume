@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <timeline class="timeline">
-        <timeline-item>
+        <timeline-item class="item">
             <h4>MC100定位定向仪器（mobile）</h4>
             <div class="item_des">
                 <p>2015/03–2015/07</p>
@@ -10,16 +10,17 @@
                 <p><strong>项目业绩:</strong>参照该项目的PC端网页,从零开始完成移动web;熟悉了HTML，CSS，Javascript;熟悉了jquery mobile，jquery等框架</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>卫星定位车辆监控系统（pc）</h4>
             <div class="item_des">
+            
                 <p>2015/03–2015/07</p>
                 <p><strong>项目概要:</strong>卫星定位车辆监控系统是利用数据采集、移动通信与互联网技术，把车辆的位置、状态等数据反馈给车辆管理人员软件；包含卫星状态，车辆信息，坐标转换，音视频设置，3G设置，wifi设置 等子网页；该项目后端采用嵌入式web框架：goahead</p>
                 <p><strong>项目职责:</strong>HTML+CSS+JS+UI DESIGN</p>
                 <p><strong>项目业绩:</strong>掌握HTML5，JS，DOM，JSON，Ajax</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>N72 CORS北斗参考站接收机网页(pc,mobile)</h4>
             <div class="item_des">
                 <p>2015/06–2015/10</p>
@@ -29,7 +30,7 @@
                 <p><strong>项目业绩:</strong>熟悉jquery easyui框架 ，能熟练调用框架中组件;对UI设计有了初步认识，能独立完成小页面的UI设计</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>i80北斗RTK测量系统(pc,mobile)</h4>
             <div class="item_des">
                 <p>2015/10--2017/03</p>
@@ -38,7 +39,7 @@
                 <p><strong>项目业绩:</strong>精通jQuery框架，使用jQuqery,AJAX,XML熟练、准确地进行代码构建，实现所需的交互效果 ;熟悉B/S架构和常见页面布局</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>气象仪（pc）</h4>
             <div class="item_des">
                 <p>2016/01–2017/02</p>
@@ -47,7 +48,7 @@
                 <p><strong>项目业绩:</strong>有良好的审美观和用户体验意识;熟悉各浏览器的差异、原理，精通jQuery等JS框架；熟悉针对主流浏览器的代码兼容及优化</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>接收机PC网页UI改版(pc)</h4>
             <div class="item_des">
                 <p>2016/09–2016/12</p>
@@ -56,7 +57,7 @@
                 <p><strong>项目业绩:</strong>学会UI设计、切图（html、css）、交互（Javascript）这些技能;学习Bootstrap框架;充分利用了jquery 插件，echart插件等，极大地丰富了网页UI;熟练使用HTML5+CSS3模式编写WEB页面的能力</p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>高精度板卡网页(pc)</h4>
             <div class="item_des">
                 <p>2016/04–2016/08 </p>
@@ -65,7 +66,7 @@
                 <p><strong>项目业绩:</strong>UI框架: 考虑过amazeUI、bootstrap，最终选择bootstrap自定义样式;兼有切图（html、css）、交互（Javascript）技能;前端做好单元测试，尽量保证自己代码问题会是最少的 </p>
             </div>
         </timeline-item>
-        <timeline-item>
+        <timeline-item class="item">
             <h4>无人船测深仪项目(pc,mobile)</h4>
             <div class="item_des">
                 <p>2017/01–2017/02</p>
@@ -105,26 +106,90 @@
             font-size: 0.8rem;
         }
         h4 {
-            color: #ffffff;
-            background-color:#66D3EE;
-            text-align: center;
+            color: #09BB07;
             font-size: 0.9rem;
-            border-radius: 0.9rem;
-            width: 300px;
         }
         strong{
-            color: #66D3EE;
+            color: #09BB07;
         }
         .project{
         padding-bottom:3.2rem;
         }
       
-      .item_des
+      .item:nth-child(odd) .item_des
         {
-        border: 2px dashed #FEDEFE;
-        border-radius: 10px;
-        margin-top: 20px;
-        background-color: #FEDCD0;
-        padding:10px;
+        background-color: #DDFFEB;
+        border: 2px dashed #49C87B;
+        border-radius: 1rem;
+        padding: 0.5rem;
         }
+        .item:nth-child(odd) h
+        {
+        color: #49C87B;
+        }
+        .item:nth-child(odd) strong
+        {
+        color: #000000;
+        font-weight:bold;
+        }
+
+        .item:nth-child(even) .item_des
+        {
+        background-color: #DEF8FE;
+        border: 2px dashed #49AFC8;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        }
+        .item:nth-child(even) h4
+        {
+        color: #49AFC8;
+        }
+        .item:nth-child(even) strong
+        {
+         color: #000000;
+         font-weight:bold;
+        }
+
+        .item_des p:nth-child(1){
+            background: url(../assets/smallImage/time.png) no-repeat left top;
+            background-size: 20px 20px;
+            padding-left:20px;
+        }
+        .item_des p:nth-child(2){
+            background: url(../assets/smallImage/des.png) no-repeat left top;
+            background-size: 20px 20px;
+            padding-left:20px;
+        }
+        .item_des p:nth-child(3){
+            background: url(../assets/smallImage/duty.png) no-repeat left top;
+            background-size: 20px 20px;
+            padding-left:20px;
+        }
+        .item_des p:nth-child(4){
+            background: url(../assets/smallImage/result.png) no-repeat left top;
+            background-size: 20px 20px;
+            padding-left:20px;
+        }
+        .item:nth-child(odd) h4{
+            border:1px solid #09BB07;
+            color: #09BB07;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 2px;
+            border-radius: 10px;
+             width: 300px;
+             box-shadow: 0px 0px 10px 3px #09BB07 inset;
+        }
+
+        .item:nth-child(even) h4{
+            border:1px solid  #49AFC8;
+            color: #49AFC8;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 2px;
+            border-radius: 10px;
+             width: 300px;
+             box-shadow: 0px 0px 10px 3px #49AFC8 inset;
+        }
+        
 </style>
