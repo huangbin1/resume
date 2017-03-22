@@ -22,5 +22,5 @@ npm run dev
 npm run build
 
 # 编译并查看bundle分析报告
-npm run build --report
+npm run build --report 
 ```
