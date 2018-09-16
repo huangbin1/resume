@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+  <script type="text/javascript" src="jquery-1.11.1.js"></script>
+</head>
+<body>
+<h>iframe4</h>
+<iframe id="iframe1" width="100%" frameborder="0" scrolling="no" src="https://huangbin1.github.io/resume/page3" sandbox="allow-scripts allow-same-origin"></iframe>
+ 
+
+</div>
+</body>
+<script>
+$(document).ready(function () {
+  window.addEventListener('message', function(event) {
+console.log(event);
+               
+      if (event.origin === "https://huangbin1.github.io") {
+        var str = JSON.parse(event.data);
+        if (str.iframe1) {
+          document.getElementById("iframe1").style.height = str.iframe1 + "px";
+        }
+            }, false);
+});
+</script>
+
