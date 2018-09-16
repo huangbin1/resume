@@ -151,14 +151,14 @@
   <li>iframe4</li>
   <li>iframe4</li>
   <li>iframe4</li>
-  <li>iframe4</li>
+  <li>bottom</li>
 </ul>
 
 </div>
 </body>
 <script>
 $(document).ready(function () {
-  var h = JSON.stringify({ 'iframe4': document.body.offsetHeight });
+  var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
   window.top.postMessage(h, 'http://localhost:9080');
 });
 </script>
