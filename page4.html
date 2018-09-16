@@ -15,13 +15,11 @@
 <script>
 $(document).ready(function () {
   window.addEventListener('message', function(event) {
-console.log(event);
-               
       if (event.origin === "https://huangbin1.github.io") {
         var str = JSON.parse(event.data);
         if (str.iframe1) {
           document.getElementById("iframe1").style.height = str.iframe1 + "px";
-        }
+        }}
             }, false);
 });
 </script>
