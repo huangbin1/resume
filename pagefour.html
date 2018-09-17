@@ -28,7 +28,7 @@ window.onload = function(){
 function receiveMessage(event)
 {
  
-  if (event.origin !== "localhost:9080")
+  if (event.origin !== "http://localhost:9080")
     return;
   
   var h = JSON.stringify({ 'iframe4': document.body.offsetHeight });
