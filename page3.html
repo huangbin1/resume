@@ -23,7 +23,7 @@
 <script>
 window.onload = function(){
   var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
-  window.top.postMessage(h, '*');
+  window.top.postMessage(h, 'http://xiaowenxia.github.io');
 
 function receiveMessage(event)
 {
