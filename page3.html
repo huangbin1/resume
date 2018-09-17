@@ -160,6 +160,17 @@
 $(document).ready(function () {
   var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
   window.top.postMessage(h, 'http://xiaowenxia.github.io');
+
+function receiveMessage(event)
+{
+  // 我们能相信信息的发送者吗?  (也许这个发送者和我们最初打开的不是同一个页面).
+  if (event.origin !== "https://huangbin1.github.io")
+    return;
+
+  // event.source 是我们通过window.open打开的弹出页面 popup
+  // event.data 是 popup发送给当前页面的消息 "hi there yourself!  the secret response is: rheeeeet!"
+}
+window.addEventListener("message", receiveMessage, false);
 });
 </script>
 
