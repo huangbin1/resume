@@ -22,14 +22,18 @@
 </body>
 <script>
 window.onload = function(){
-  var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
-  window.top.postMessage(h, 'http://xiaowenxia.github.io');
+  //var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
+  //window.top.postMessage(h, 'http://xiaowenxia.github.io');
 
 function receiveMessage(event)
 {
-  // 我们能相信信息的发送者吗?  (也许这个发送者和我们最初打开的不是同一个页面).
-  if (event.origin !== "https://xiaowenxia.github.io")
+ 
+  if (event.origin !== "http://xiaowenxia.github.io")
     return;
+  
+  var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
+  event.source.postMessage(h,event.origin);
+                           
 }
 window.addEventListener("message", receiveMessage, false);
 };
