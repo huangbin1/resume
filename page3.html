@@ -1,20 +1,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
   <title>无标题文档</title>
-  <script type="text/javascript" src="./static/jquery-1.11.1.js"></script>
+<!--   <script type="text/javascript" src="./static/jquery-1.11.1.js"></script>  -->
 </head>
 <body>
-<h>iframe4</h>
+<h>iframe1</h>
 <ul>
-  <li>iframe4</li>
-  
-  <li>iframe4</li>
-  <li>iframe4</li>
-  <li>iframe4</li>
-  <li>iframe4</li>
-  
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
+  <li>iframe1</li>
   <li>bottom</li>
 </ul>
 
@@ -35,7 +68,13 @@ function receiveMessage(event)
   event.source.postMessage(h,event.origin);
                            
 }
-window.addEventListener("message", receiveMessage, false);
+if (window.addEventListener) {
+      window.addEventListener("message", receiveMessage, false);
+    } else {
+      if (window.attachEvent) {
+        window.attachEvent("onmessage", receiveMessage);
+      }
+    }
 };
 </script>
 
