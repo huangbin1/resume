@@ -65,7 +65,7 @@ function receiveMessage(event)
     return;
   
   var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
-  window.top.postMessage(h,event.origin);
+  event.source.postMessage(h,event.origin);
                            
 }
 if (window.addEventListener) {
