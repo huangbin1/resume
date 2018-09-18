@@ -55,8 +55,8 @@
 </body>
 <script>
 window.onload = function(){
-  //var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
-  //window.top.postMessage(h, 'http://xiaowenxia.github.io');
+  
+  window.top.postMessage(document.body.offsetHeight, 'http://xiaowenxia.github.io');
 
 function receiveMessage(event)
 {
