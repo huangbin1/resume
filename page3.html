@@ -63,9 +63,7 @@ function receiveMessage(event)
  
   if (event.origin !== "http://xiaowenxia.github.io")
     return;
-  
-  var h = JSON.stringify({ 'iframe1': document.body.offsetHeight });
-  event.source.postMessage(h,event.origin);
+  window.top.postMessage( document.body.offsetHeight,event.origin);
                            
 }
 if (window.addEventListener) {
