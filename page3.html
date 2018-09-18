@@ -54,25 +54,11 @@
 </div>
 </body>
 <script>
-window.onload = function(){
-  
-  window.top.postMessage(document.body.offsetHeight, 'http://xiaowenxia.github.io');
+ <script>
+      $(document).ready(function () {
+        window.top.postMessage(document.body.offsetHeight, '*');
+      });
+    </script>
 
-function receiveMessage(event)
-{
- 
-  if (event.origin !== "http://xiaowenxia.github.io")
-    return;
-  window.top.postMessage( document.body.offsetHeight,event.origin);
-                           
-}
-if (window.addEventListener) {
-      window.addEventListener("message", receiveMessage, false);
-    } else {
-      if (window.attachEvent) {
-        window.attachEvent("onmessage", receiveMessage);
-      }
-    }
-};
 </script>
 
