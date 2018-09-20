@@ -1,0 +1,95 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+</head>
+<body>
+<h>iframe2</h>
+<ul>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+  <li>iframe2</li>
+</ul>
+
+</div>
+</body>
+<script>
+  window.onload = function(){
+  
+  if (window.addEventListener) {
+        window.addEventListener("message", receiveMessage, false);
+      } else {
+        if (window.attachEvent) {
+          window.attachEvent("onmessage", receiveMessage);
+        }
+      }
+  function receiveMessage(event)
+  {
+   
+    if (event.origin !== "http://localhost:9080")
+      return;
+    event.source.postMessage(document.body.offsetHeight,event.origin);
+                             
+  }
+  };
+  </script>
+
