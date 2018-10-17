@@ -57,11 +57,12 @@ body {height: 100%;;}
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 <script>
-  window.onload=function(){
-	  try{
+  try{window.onload=function(){
+	  
        window.top.postMessage(document.body.scrollHeight, '*');
-	  }
+	  
+  };
+      }
 	  catch(err) {
 	  }
-  };
 </script>
