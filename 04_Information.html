@@ -33,7 +33,7 @@ dd h2 {font-weight:bold;}
 	width: 100%;
 	/*position: absolute;*/
 	left: 0;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	height: 100%;
 	padding:10px 0 0 5px;
 }
@@ -545,5 +545,15 @@ p#body
 <script>
   window.onload=function(){
     window.top.postMessage(document.body.scrollHeight, '*');
+    function OnMessage(event) {
+      window.top.postMessage(document.body.scrollHeight, '*');
+    }
+    if (window.addEventListener) {
+      window.addEventListener("message", OnMessage, false);
+    } else {
+      if (window.attachEvent) {
+      window.attachEvent("onmessage", OnMessage);
+      }
+    }
   };
 </script>
