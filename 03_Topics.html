@@ -234,19 +234,12 @@ p#body
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 <script>
-  window.onload=function(){
-	  try{
+  try{window.onload=function(){
+	  
     window.top.postMessage(document.body.scrollHeight, '*');
-	  }
-	  catch(err)
-	  {
-	  }
+	  
     function OnMessage(event) {
-	    try{
       window.top.postMessage(document.body.scrollHeight, '*');
-	    }
-	    catch(err)
-	    {}
     }
     if (window.addEventListener) {
       window.addEventListener("message", OnMessage, false);
@@ -256,4 +249,9 @@ p#body
       }
     }
   };
+      }
+	  catch(err)
+	  {
+		  console.log(err);
+	  }
 </script>
