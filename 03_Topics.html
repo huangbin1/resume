@@ -19,7 +19,7 @@ body {height: 100%;;}
 	width: 100%;
 	/*position: absolute;*/
 	left: 0;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	height: 100%;
 	padding:20px 0 0 20px;
 }
@@ -235,6 +235,19 @@ p#body
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 <script>
   window.onload=function(){
+	  setInterval(function(){
+		  console.log("1111");
     window.top.postMessage(document.body.scrollHeight, '*');
+	  }, 400);
+    function OnMessage(event) {
+      window.top.postMessage(document.body.scrollHeight, '*');
+    }
+    if (window.addEventListener) {
+      window.addEventListener("message", OnMessage, false);
+    } else {
+      if (window.attachEvent) {
+      window.attachEvent("onmessage", OnMessage);
+      }
+    }
   };
 </script>
