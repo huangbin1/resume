@@ -543,26 +543,21 @@ p#body
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 <script>
-  try{
-	  window.onload=function(){
-	 
+  window.onload = function () {
     window.top.postMessage(document.body.scrollHeight, '*');
-	  
+
     function OnMessage(event) {
+      if (event.source !== window.top) {
+        return
+      }
       window.top.postMessage(document.body.scrollHeight, '*');
     }
     if (window.addEventListener) {
       window.addEventListener("message", OnMessage, false);
     } else {
       if (window.attachEvent) {
-      window.attachEvent("onmessage", OnMessage);
+        window.attachEvent("onmessage", OnMessage);
       }
     }
-     
   };
-	  }
-	catch(err)
-	  {
-		  console.log(err);
-	  }
 </script>
