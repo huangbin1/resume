@@ -547,8 +547,8 @@ p#body
     window.top.postMessage(document.body.scrollHeight, '*');
 
     function OnMessage(event) {
-      if (event.source !== window.top) {
-        return
+      if (event.data !== 'Hello') {
+        return;
       }
       window.top.postMessage(document.body.scrollHeight, '*');
     }
