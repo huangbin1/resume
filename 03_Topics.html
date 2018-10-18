@@ -231,24 +231,24 @@ p#body
     </div>
   </div>
 
-
-</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 <script>
-  window.onload = function () {
-    window.top.postMessage(document.body.scrollHeight, '*');
+      window.onload = function () {
+        window.top.postMessage(document.body.scrollHeight, '*');
+    
+        function OnMessage(event) {
+          if (event.data !== 'get height') {
+            return;
+          }
+          window.top.postMessage(document.body.scrollHeight, '*');
+        }
+        if (window.addEventListener) {
+          window.addEventListener("message", OnMessage, false);
+        } else {
+          if (window.attachEvent) {
+            window.attachEvent("onmessage", OnMessage);
+          }
+        }
+      };
+    </script>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
 
-    function OnMessage(event) {
-      if (event.data !== 'Hello') {
-        return;
-      }
-      window.top.postMessage(document.body.scrollHeight, '*');
-    }
-    if (window.addEventListener) {
-      window.addEventListener("message", OnMessage, false);
-    } else {
-      if (window.attachEvent) {
-        window.attachEvent("onmessage", OnMessage);
-      }
-    }
-  };
-</script>
