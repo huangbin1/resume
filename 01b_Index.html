@@ -71,7 +71,7 @@ body {height: 100%;;}
    </div>
   </div>
   
-<div style="padding: 5px; margin-bottom: 5px; border: 1.5px solid #ff0000; background-color: #b5b6b6; color:#ffffff" onclick="targetBlank()">
+<div style="padding: 5px; margin-bottom: 5px; border: 1.5px solid #ff0000; background-color: #b5b6b6; color:#ffffff" onclick="test()">
     　Information / 利用方法
 </div> 
 
@@ -125,7 +125,7 @@ body {height: 100%;;}
 <script>
   window.onload = function () {
     window.top.postMessage(document.body.scrollHeight, '*');
-    function targetBlank(){
+    function test(){
 	 window.top.postMessage("targetBlank", '*');   
     }
     function OnMessage(event) {
